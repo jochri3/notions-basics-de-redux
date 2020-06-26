@@ -22,7 +22,7 @@ function Compteur() {
 
 function Resultat(props) {
   return (
-    <span style={{ margin: '10px' }}>
+    <span style={{ margin: '10px', color: 'red' }}>
       La valeur est : {props.valeurActuelle}
     </span>
   );
