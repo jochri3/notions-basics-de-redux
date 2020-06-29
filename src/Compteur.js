@@ -1,7 +1,8 @@
 import React from 'react';
-import { incrementer, decrementer } from './App';
+import { incrementer, decrementer } from './redux/compteur/compteur.actions';
 import { useDispatch } from 'react-redux';
 import Resultat from './Resultat';
+import Users from './Users';
 
 function Compteur() {
   const dispatch = useDispatch();
@@ -11,6 +12,7 @@ function Compteur() {
       <button onClick={() => dispatch(incrementer())}>+</button>
       <Resultat />
       <button onClick={() => dispatch(decrementer())}>-</button>
+      <Users />
     </>
   );
 }
